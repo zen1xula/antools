@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 a {
   text-decoration: none;
@@ -13,6 +14,7 @@ body {
   background-color: #1e252b;
   text-decoration: none;
 }
+
 .container {
   width: 1245px;
   padding: 0 15px;
@@ -20,12 +22,98 @@ body {
 }
 .header {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 26px;
 }
 .nav-link {
   color: white;
-  display: flex;
+  text-align: center;
+  opacity: 55%;
 }
-.header-nav {
+
+.logo {
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: #ffffffe5;
+}
+
+.nav-list {
   display: flex;
+  gap: 45px;
+}
+
+.headerbtn {
+  display: flex;
+  gap: 15px;
   align-items: center;
+}
+.loginbtn {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 16px;
+  padding-right: 28px;
+  padding-top: 12px;
+  padding-left: 28px;
+  padding-bottom: 12px;
+  border: none;
+  background-color: transparent;
+  color: #ffffffc7;
+  border-radius: 8px;
+}
+.loginbtn:hover {
+  background-color: #ff6e30;
+  color: #fdf5ff;
+}
+.signupbtn {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 16px;
+  padding-right: 28px;
+  padding-top: 12px;
+  padding-left: 28px;
+  padding-bottom: 12px;
+  border: none;
+  background-color: transparent;
+  color: #ffffffc7;
+  border-radius: 8px;
+}
+.signupbtn:hover {
+  background-color: #ff6e30;
+  color: #fdf5ff;
+}
+.hero {
+  padding-top: 178px;
+  background-image: url(./img/Illustration.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.logo {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  text-align: center;
+}
+.logo::before {
+  content: "";
+  display: inline-block;
+  width: 19.29px;
+  height: 20.95px;
+  background-image: url(./img/logo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 21.46px;
+}
+.hero-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 50px;
+  color: #ffffffe5;
+  padding-bottom: 30px;
+}
+.hero-title span {
+  color: #ff6e30;
 }
