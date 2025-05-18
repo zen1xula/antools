@@ -315,6 +315,7 @@ body {
 .newcomer-info {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 200px;
 }
 .newcomer-info-start {
   font-family: "Poppins", sans-serif;
@@ -324,7 +325,6 @@ body {
   color: #ffffff8c;
   margin-bottom: 60px;
   width: 900px;
-  margin-right: 200px;
 }
 .newcomer-info-start p {
   margin-bottom: 60px;
@@ -444,4 +444,7 @@ body {
   padding-right: 2.5px;
   padding-left: 2.5px;
   padding-bottom: 4.37px;
+}
+.workers {
+  margin-left: 165px;
 }
