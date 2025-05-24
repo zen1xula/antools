@@ -17,7 +17,7 @@
     <title>antools</title>
   </head>
   <body>
-    <header class="container header">
+    <header class="container header" id="hero">
       <a href="" class="logo">antools.</a>
       <ul class="nav-list">
         <li><a href="" class="nav-link">Home</a></li>
@@ -26,8 +26,8 @@
         <li><a href="" class="nav-link">Blog</a></li>
       </ul>
       <ul class="headerbtn">
-        <li><button class="loginbtn">Login</button></li>
-        <li><button class="signupbtn">Sign Up</button></li>
+        <li><button type="submit" class="loginbtn">Login</button></li>
+        <li><button type="submit" class="signupbtn">Sign Up</button></li>
       </ul>
     </header>
     <main>
@@ -41,11 +41,14 @@
             Antool is a web collection of information on paid or<br />
             free Design and Development tools
           </p>
-          <input
-            type="text"
-            class="search"
-            placeholder="find more than 430+ tools..."
-          />
+          <form class="heroform">
+            <input
+              type="text"
+              class="search"
+              placeholder="find more than 430+ tools..."
+            />
+            <button class="formbtn" type="submit">Search</button>
+          </form>
           <ul class="social">
             <li class="social-link"><img src="./img/facebook.png" alt="" /></li>
             <li class="social-link">
@@ -55,7 +58,7 @@
           </ul>
         </div>
       </section>
-      <section class="tools">
+      <section class="tools" id="dev">
         <div class="container section-start">
           <h2 class="title-tools">Most Popular Tools</h2>
           <p class="about-tools">
@@ -87,7 +90,7 @@
                     </button>
                   </li>
                 </ul>
-                <button>Visit</button>
+                <button class="visitbtn">Visit</button>
               </div>
             </li>
             <li class="tools-item">
@@ -114,7 +117,7 @@
                     </button>
                   </li>
                 </ul>
-                <button>Visit</button>
+                <button class="visitbtn">Visit</button>
               </div>
             </li>
             <li class="tools-item">
@@ -141,7 +144,7 @@
                     </button>
                   </li>
                 </ul>
-                <button>Visit</button>
+                <button class="visitbtn">Visit</button>
               </div>
             </li>
             <li class="tools-item">
@@ -168,7 +171,7 @@
                     </button>
                   </li>
                 </ul>
-                <button>Visit</button>
+                <button class="visitbtn">Visit</button>
               </div>
             </li>
             <li class="tools-item">
@@ -195,7 +198,7 @@
                     </button>
                   </li>
                 </ul>
-                <button>Visit</button>
+                <button class="visitbtn">Visit</button>
               </div>
             </li>
             <li class="tools-item">
@@ -222,14 +225,14 @@
                     </button>
                   </li>
                 </ul>
-                <button>Visit</button>
+                <button class="visitbtn">Visit</button>
               </div>
             </li>
           </ul>
         </div>
         <button class="loadbtn">Load more</button>
       </section>
-      <section class="container brands">
+      <section class="container brands" id="brands">
         <h4 class="brands-title">Trusted more than 150+ brand</h4>
         <ul class="brands-list">
           <li>
@@ -282,7 +285,7 @@
                   </button>
                 </li>
               </ul>
-              <button>Visit</button>
+              <button class="visitbtn">Visit</button>
             </div>
           </li>
           <li class="newtools-item">
@@ -309,7 +312,7 @@
                   </button>
                 </li>
               </ul>
-              <button>Visit</button>
+              <button class="visitbtn">Visit</button>
             </div>
           </li>
           <li class="newtools-item">
@@ -336,7 +339,7 @@
                   </button>
                 </li>
               </ul>
-              <button>Visit</button>
+              <button class="visitbtn">Visit</button>
             </div>
           </li>
           <li class="newtools-item">
@@ -363,23 +366,78 @@
                   </button>
                 </li>
               </ul>
-              <button>Visit</button>
+              <button class="visitbtn">Visit</button>
             </div>
           </li>
         </ul>
       </section>
-      <section class="workers">
+      <section class="container contributor">
+        <h4>Become a contributor?</h4>
         <p>
-          Incididunt cillum do sint sint enim ullamco id deserunt mollit<br />
-          qui reprehenderit do. Velit ex tempor cillum ad sint occaecat. Do
-          nulla velit labore occaecat<br />
-          do deserunt Lorem magna<br />
-          officia incididunt consectetur amet. Sunt consectetur veniam<br />
-          minim ex commodo sint non. Occaecat aute officia excepteur<br />
-          non laboris id qui ad.
-          <img src="./img/david.png" alt="" />
+          Join us and get tips & tricks to become a great<br />
+          Designer and Developer
         </p>
+        <form class="contributorform">
+          <input
+            type="text"
+            placeholder="Enter your email..."
+            class="enteremail"
+          />
+          <button class="joinbtn" type="submit">Join Us</button>
+        </form>
       </section>
+      <footer class="footer">
+        <div class="container footer-container">
+          <ul class="logotype-list">
+            <li>
+              <a href="" class="logofooter"
+                ><img src="./img/group159.png" alt="logotype" /><span
+                  class="antools-footer"
+                  >antools.</span
+                ></a
+              >
+            </li>
+            <li>
+              <h4 class="logotype-title">Copyright 2021. Antools</h4>
+            </li>
+            <li>
+              <p class="logotype-text">
+                Antool is a web collection of <br />
+                information on paid or free Design <br />
+                and Development tools
+              </p>
+            </li>
+          </ul>
+
+          <ul class="list-of-lists">
+            <ul class="footer-list">
+              <li><h4 class="footer-title">Contact Us</h4></li>
+              <li>
+                <a href="tel:+621987463" class="footer-text">+621987463</a>
+              </li>
+              <li><a href="" class="footer-text">M Building, No.10 A</a></li>
+              <li>
+                <a href="mailto:antools@awesome.com" class="footer-text"
+                  >antools@awesome.com</a
+                >
+              </li>
+            </ul>
+
+            <ul class="footer-list">
+              <li><h4 class="footer-title">Categories</h4></li>
+              <li><a href="#hero" class="footer-text">Design</a></li>
+              <li><a href="#dev" class="footer-text">Development</a></li>
+            </ul>
+
+            <ul class="footer-list">
+              <li><h4 class="footer-title">Company Info</h4></li>
+              <li><a href="./index.html" class="footer-text">About Us</a></li>
+              <li><a href="#brands" class="footer-text">Our Partners</a></li>
+              <li><a href="./index.html" class="footer-text">Blog</a></li>
+            </ul>
+          </ul>
+        </div>
+      </footer>
     </main>
   </body>
 </html>

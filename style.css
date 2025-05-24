@@ -86,10 +86,9 @@ body {
 .hero {
   background-image: url(./img/Illustration.png);
   background-position: right;
-  margin-top: 58px;
   background-repeat: no-repeat;
-  background-size: contain;
-  margin-bottom: 200px;
+  width: 1440px;
+  margin: 58px auto 200px;
 }
 .hero h1 {
   margin-bottom: 30px;
@@ -103,17 +102,27 @@ body {
   margin-bottom: 60px;
   color: #ffffff8c;
 }
-.hero button {
-  width: 130.43478393554688px;
-  align-items: center;
+.formbtn {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
   border: none;
+  background-color: transparent;
+  color: #ffffffc7;
   padding-top: 12px;
-  padding-left: 36.12px;
+  padding-right: 28px;
   padding-bottom: 12px;
-  padding-right: 36.12px;
-  background-color: #ff6e30;
+  padding-left: 28px;
   border-radius: 8px;
-  color: #ffffff;
+  position: absolute;
+  left: 30%;
+  top: 10px;
+}
+.formbtn:hover {
+  background-color: #ff6e30;
+}
+.heroform {
+  position: relative;
 }
 .hero input {
   width: 497.65887451171875px;
@@ -254,6 +263,23 @@ body {
   padding-left: 2.5px;
   padding-bottom: 4.37px;
 }
+.visitbtn {
+  background-color: transparent;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-bottom: 12px;
+  padding-top: 12px;
+  max-width: 106px;
+  max-height: 42px;
+}
+.visitbtn:hover {
+  background-color: #ff6e30;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-bottom: 12px;
+  padding-top: 12px;
+  color: #ffffff;
+}
 .section-start {
   margin-bottom: 100px;
 }
@@ -269,6 +295,10 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 20px;
+}
+.loadbtn:hover {
+  background-color: #ff6e30;
+  color: #fdf5ff;
 }
 .tools {
   margin-bottom: 200px;
@@ -325,6 +355,7 @@ body {
   color: #ffffff8c;
   margin-bottom: 60px;
   width: 900px;
+  margin-right: 180px;
 }
 .newcomer-info-start p {
   margin-bottom: 60px;
@@ -347,7 +378,7 @@ body {
 }
 
 .newtools-item {
-  max-width: 360px;
+  max-width: 288px;
   padding: 33px;
   border-radius: 15px;
 }
@@ -445,6 +476,140 @@ body {
   padding-left: 2.5px;
   padding-bottom: 4.37px;
 }
-.workers {
-  margin-left: 165px;
+.contributor {
+  margin-bottom: 200px;
+}
+.contributor h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 130%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #ffffffe5;
+  margin-bottom: 25px;
+}
+.contributor p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #ffffff8c;
+  margin-bottom: 100px;
+}
+.contributorform {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.contributor input {
+  width: 549px;
+  border: 1.5px solid #ffffff1a;
+  background-color: #283036;
+  color: #ffffff61;
+  padding: 21px 22px;
+  text-align: left;
+  border-radius: 15px;
+  align-items: center;
+}
+.joinbtn {
+  background-color: #ff6e30;
+  padding-top: 15px;
+  padding-right: 36.43px;
+  padding-left: 35.81px;
+  padding-bottom: 15px;
+  border: none;
+  border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #ffffff;
+  position: absolute;
+  left: 60%;
+}
+.footer {
+  border-top: 0.5px solid #ffffff26;
+}
+.footer-container {
+  display: flex;
+  padding: 70px 0 98px 0;
+}
+.logotype-list {
+  display: flex;
+  flex-direction: column;
+}
+.logotype-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #ffffffe5;
+  margin-top: 25px;
+  margin-bottom: 21px;
+}
+.logotype-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  color: #ffffff8c;
+}
+
+.list-of-lists {
+  display: flex;
+  padding: 0;
+  gap: 115px;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+.footer-title {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 20px;
+  color: #ffffffe5;
+}
+.footer-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #ffffff8c;
+  margin-bottom: 10px;
+}
+
+.list-of-lists:nth-child(2) {
+  align-items: flex-start;
+}
+.logofooter img {
+  margin-right: 12px;
+}
+.antools-footer {
+  font-weight: 600;
+  font-size: 22px;
+  color: #ffffffe5;
+  vertical-align: 10px;
+}
+.logotype-list {
+  max-width: 260px;
+  margin-right: 156px;
+}
+.footer-list:nth-child(1) {
+  max-width: 197px;
+  margin-right: 115px;
+}
+.footer-list:nth-child(2) {
+  max-width: 112px;
+  margin-right: 115px;
+}
+.footer-list:nth-child(3) {
+  max-width: 180px;
 }
